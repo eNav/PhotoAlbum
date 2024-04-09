@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:controller="controller.AdminController" xmlns:fx="http://javafx.com/fxml">
+    <!-- Add UI components for admin functionality -->
+    <HBox spacing="10">
+        <Label text="New Username:"/>
+        <TextField fx:id="newUserField" promptText="Enter Username"/>
+        <Button text="Create User" onAction="#createUser"/>
+    </HBox>
+    <ListView fx:id="userList"/>
+    <Button text="List Users" onAction="#listUsers"/>
+    <Button text="Delete User" onAction="#deleteUser"/>
+    <Button text="Logout" onAction="#logout"/>
+</VBox>
+

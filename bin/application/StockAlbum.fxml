@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="400.0" prefWidth="600.0" xmlns="https://javafx.com/javafx/8" xmlns:fx="https://javafx.com/fxml"
+		fx:controller="controller.UserController">
+    
+    <HBox spacing="10">
+        <Label text="Stock Album"/>
+    </HBox>
+    
+    <HBox spacing="10">
+        <Button text="Create Album" onAction="#createAlbum"/>
+        <Button text="Open Album" onAction="#openAlbum"/>
+    </HBox>
+    
+    <Button text="Delete Album" onAction="#deleteAlbum"/>
+    <Button text="Logout" onAction="#logout"/>
+    
+    <ListView fx:id="albumListView" prefWidth="200"/>
+</VBox>
